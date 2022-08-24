@@ -1,0 +1,66 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+.principal{
+    background-color:v.$rosa;
+}
+.principal_texto{
+    text-align: center;
+    color: v.$blanco;
+    padding-top: 1rem;
+}
+.principal_tarjetaAmarilla{
+    background-color: v.$amarillo;
+    display: grid;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.principal_tarjetaAmarilla_encabezado img{
+    max-width: 15rem;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+.principal_tarjetaAmarilla_cuerpo span{
+    font-weight: bold;
+}
+
+.principal_tarjetaAmarilla_cuerpo li:nth-of-type(odd) {
+    background-color: darken($color: v.$amarillo, $amount: 30);
+}
+
+
+.principal_tarjetaVerde{
+    background-color: v.$verde;
+    display: grid;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.principal_tarjetaVerde_encabezado img{
+    max-width: 15rem;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+.principal_tarjetaVerde_cuerpo span{
+    font-weight: bold;
+}
+.principal_tarjetaVerde_cuerpo li:nth-of-type(odd) {
+    background-color: darken($color: v.$verde, $amount: 10);
+}
+
+@include m.desktop{
+    .tarjetero{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+        margin: 0 5rem;
+        padding-bottom: 5rem;
+    }
+    .principal_tarjetaVerde_cuerpo li{
+        font-size: 2rem;
+        padding: 1rem 0;
+    }
+    .principal_tarjetaAmarilla_cuerpo li{
+        font-size: 2rem;
+        padding: 1rem 0;
+    }
+}

@@ -1,0 +1,50 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+.boletos{
+    background-color: v.$verde;
+    width: 100%;
+    height: 100%;
+    
+}
+.boletos h3{
+  color: v.$blanco;
+  text-align: center;
+  padding-top: 2rem;
+  margin: 0;
+}
+.boletos h4{
+    color: v.$blanco;
+    text-align: center;
+    font-weight: 400;
+}
+.boletos_titulo{
+    text-transform: uppercase;
+    text-align: center;
+    color: v.$blanco;
+    background-color: v.$rosa;
+    margin-bottom: 0;
+    padding: 1rem;
+}
+.boleto_informacion{
+    background-color: v.$blanco;
+    line-height:3;
+  
+}
+.boleto_informacion li{
+    margin-left: 2rem;
+}
+.boleto_precio{
+    background-color: v.$morado;
+    color: v.$blanco;
+    text-align: center;
+    margin-top: 0;
+    padding: 1rem;
+}
+@include m.desktop{
+    .boletos_informacion{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+       
+    }
+}

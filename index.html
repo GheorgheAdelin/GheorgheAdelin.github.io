@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock & EDM Festival</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/build/css/app.css" />
+  </head>
+  <body>
+    <div class="header">
+      <header class="contenidoHeader contenedor">
+        <h1 class="titulo">Rock & EDM Festival</h1>
+        <nav class="navegacionPrincipal">
+          <a href="#lineup">Line Up</a>
+          <a href="#galeria">Galería</a>
+          <a href="#boletos">Boletos</a>
+        </nav>
+      </header>
+    </div>
+
+    <div class="video">
+      <div class="over">
+        <div class="video_contenido contenedor">
+          <h2>Rock & EDM Festival</h2>
+          <p>Julio 2023, Madrid, España.</p>
+        </div>
+      </div>
+      <video src="video/concierto.mp4" type="video/mp4" autoplay muted loop>
+        <source src="video/concierto.webm" type="video/webm" />
+      </video>
+    </div>
+    <!-- section -->
+    <section class="section contenedor">
+      <div class="section_imagen">
+        <img src="img/imagen_vocalista.jpg" alt="vocalista.jpg" />
+      </div>
+      <div class="section_texto">
+        <h2>Rock & EDM Festival</h2>
+        <p class="section_titulo">Julio 2023, Madrid, España.</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+          distinctio tempora, laboriosam dolore deleniti unde placeat iusto quo
+          est blanditiis. Excepturi dicta totam nam dolore tempore repudiandae,
+          asperiores quis est.
+        </p>
+      </div>
+    </section>
+    <!-- section -->
+    <!-- contenido -->
+    <section id ='lineup' class="principal">
+      <div class="principal_texto">
+        <h2>Line Up</h2>
+        <p>viernes 21</p>
+      </div>
+      <div class="tarjetero">
+        <div class="principal_tarjetaAmarilla">
+          <div class="principal_tarjetaAmarilla_encabezado">
+            <h3>Escenario Rock</h3>
+            <img src="img/icono_rock.png" alt="icono_rock.png" />
+          </div>
+          <div class="principal_tarjetaAmarilla_cuerpo">
+            <ul>
+              <li><span> 24:00 |</span> Metallica</li>
+              <li><span> 24:00 |</span> Metallica</li>
+              <li><span> 24:00 |</span> Metallica</li>
+              <li><span> 24:00 |</span> Metallica</li>
+              <li><span> 24:00 |</span> Metallica</li>
+              <li><span> 24:00 |</span> Metallica</li>
+            </ul>
+          </div>
+        </div>
+        <div class="principal_tarjetaVerde">
+          <div class="principal_tarjetaVerde_encabezado">
+            <h3>Escenario EDM</h3>
+            <img src="img/icono_edm.png" alt="icono_edm.png" />
+          </div>
+          <div class="principal_tarjetaVerde_cuerpo">
+            <ul>
+              <li><span> 24:00 |</span> Tiesto</li>
+              <li><span> 24:00 |</span> Tiesto</li>
+              <li><span> 24:00 |</span> Tiesto</li>
+              <li><span> 24:00 |</span> Tiesto</li>
+              <li><span> 24:00 |</span> Tiesto</li>
+              <li><span> 24:00 |</span> Tiesto</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="principal_texto">
+        <p>sabado 23</p>
+      </div>
+      <div class="tarjetero">
+        <div class="principal_tarjetaAmarilla">
+          <div class="principal_tarjetaAmarilla_encabezado">
+            <h3>Escenario Rock</h3>
+            <img src="img/icono_rock.png" alt="icono_rock.png" />
+          </div>
+          <div class="principal_tarjetaAmarilla_cuerpo">
+            <ul class="principal_tarjetaAmarilla_cuerpo_lista">
+              <li><span> 24:00 |</span> Metallica</li>
+              <li><span> 24:00 |</span> Metallica</li>
+              <li><span> 24:00 |</span> Metallica</li>
+              <li><span> 24:00 |</span> Metallica</li>
+              <li><span> 24:00 |</span> Metallica</li>
+              <li><span> 24:00 |</span> Metallica</li>
+            </ul>
+          </div>
+        </div>
+        <div class="principal_tarjetaVerde">
+          <div class="principal_tarjetaVerde_encabezado">
+            <h3>Escenario EDM</h3>
+            <img src="img/icono_edm.png" alt="icono_edm.png" />
+          </div>
+          <div class="principal_tarjetaVerde_cuerpo">
+            <ul>
+              <li><span> 24:00 |</span> Tiesto</li>
+              <li><span> 24:00 |</span> Tiesto</li>
+              <li><span> 24:00 |</span> Tiesto</li>
+              <li><span> 24:00 |</span> Tiesto</li>
+              <li><span> 24:00 |</span> Tiesto</li>
+              <li><span> 24:00 |</span> Tiesto</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contenido -->
+    <!-- carrusel -->
+
+    <section id='galeria' class="galeria contenedor">
+      <h3>Galeria</h3>
+      <ul class="galeria_imagenes"></ul>
+    </section>
+    <!-- carrusel -->
+    
+<!--  boletos -->
+  <section id='boletos' class="boletos">
+    <h3>Boletos</h3>
+    <div class="boletos_informacion">
+      <div class="boleto1">
+        <h4>Pase 1 Día</h4>
+        <p class="boletos_titulo">incluye</p>
+        <ul class="boleto_informacion">
+          <li>Acceso a ambos escenarios</li>
+          <li>Comida y bebida</li>
+        </ul>
+        <p class="boleto_precio">$100</p>
+      </div>
+      <div class="boleto2">
+        <h4>Pase 2 Días</h4>
+        <p class="boletos_titulo">incluye</p>
+        <ul class="boleto_informacion">
+          <li>Acceso a ambos escenarios</li>
+          <li>Comida y bebida</li>
+          <li>Camiseta del evento</li>
+          <li>Acceso VIP</li>
+        </ul>
+        <p class="boleto_precio">$180</p>
+      </div>
+    </div>
+  </section>    
+    
+    
+<!--  boletos -->
+<!--  footer -->
+<p class="footer">
+  Rock & EDM Festival. Todos Los Derechos Reservados.
+</p>
+<!--  footer -->
+
+    <script src="build/js/app.js"></script>
+  </body>
+</html>
